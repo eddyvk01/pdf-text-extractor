@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Filename</th>
+        <th>PDF Link</th>
+    </tr>
+    {% for text in texts %}
+    <tr>
+        <td>{{ text.pdf_file.name }}</td>
+        <td><a href="{{ text.pdf_file.url }}">View PDF</a></td>
+    </tr>
+    {% endfor %}
+</table>
