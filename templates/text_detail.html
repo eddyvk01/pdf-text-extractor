@@ -1,3 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+
 <h1>Text: {{ text.pdf_file.name }}</h1>
 <p>{{ text.text }}</p>
 <a href="{{ text.pdf_file.url }}">View PDF</a>
+
+{% endblock content %}

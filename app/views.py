@@ -7,19 +7,6 @@ from django.shortcuts import redirect
 from django.conf import settings
 import tempfile
 
-# # views.py
-
-# import os
-
-# from django.shortcuts import render, redirect, get_object_or_404
-# from django.conf import settings
-
-
-
-# from .forms import UploadPDFForm
-# from .models import Text
-
-
 def extract_text_from_pdf(pdf_file):
     # create a temporary file
     temp = tempfile.NamedTemporaryFile(delete=False)
